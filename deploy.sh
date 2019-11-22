@@ -1,5 +1,5 @@
 docker build -t alextagger/multi-client:latest -t alextagger/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t alextagger/multi-server:latest -t alextagger/multi-server:$SHA -f ./serveer/Dockerfile ./server
+docker build -t alextagger/multi-server:latest -t alextagger/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t alextagger/multi-worker:latest -t alextagger/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push alextagger/multi-client:latest
