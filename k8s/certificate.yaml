@@ -1,0 +1,18 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate:
+metadata:
+  name: k8s-multi-testarica-com-tls
+spec:
+  secretName: k8s-multi-testarica-com
+  issuesRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: k8s-multi.testarica.com
+  dnsNames:
+    - k8s-multi.testarica.com
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains
+          - k8s-multi.testarica.com
