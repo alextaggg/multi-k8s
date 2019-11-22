@@ -10,9 +10,11 @@ spec:
   commonName: k8s-multi.testarica.com
   dnsNames:
     - k8s-multi.testarica.com
+    - www.k8s-multi.testarica.com
   acme:
     config:
       - http01:
           ingressClass: nginx
         domains
           - k8s-multi.testarica.com
+          - www.k8s-multi.testarica.com
