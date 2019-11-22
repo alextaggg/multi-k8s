@@ -1,5 +1,5 @@
 apiVersion: cert-manager.io/v1alpha2
-kind: Certificate:
+kind: Certificate
 metadata:
   name: k8s-multi-testarica-com-tls
 spec:
