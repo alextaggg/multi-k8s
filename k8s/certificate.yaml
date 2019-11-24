@@ -4,7 +4,7 @@ metadata:
   name: k8s-multi-testarica-com-tls
 spec:
   secretName: k8s-multi-testarica-com
-  issuesRef:
+  issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
   commonName: k8s-multi.testarica.com
